@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta>
+    <title>VegJobs - Inicio</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra las mejores ofertas de trabajo para desarrolladores en DevJobs.">
+    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="../index.html">
+            <h1>
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    VegJobs
+            </h1>
+        </a>
+        <nav>
+            <a href="/00-html-css/mine/pages/empleos.html">Empleos</a>
+        </nav>
+
+        <div>
+            <button>Publicar un empleo</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="jobs-search">
+            <h1>Encuentra tu próximo trabajo</h1>
+            <p>Explora miles de oportunidades en el sector tecnológico.</p>
+
+            <form role="search">
+                <div class="search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                    </svg>
+                    <input requiered type="text" placeholder="Busca trabajos, empresas o habilidades">
+                </div>
+
+                <div class="search-filters">
+                    <select name="technology" id="technology">
+                        <option value="">Tecnología</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="react">React</option>
+                        <option value="nodejs">Node.js</option>
+                    </select>
+
+                    <select name="location" id="location">
+                        <option value="">Localización</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="cdmx">Ciudad de México</option>
+                        <option value="guadalajara">Guadalajara</option>
+                        <option value="montrey">Monterrey</option>
+                        <option value="barcelona">Barcelona</option>
+                    </select>
+
+                    <select name="experience-level" id="experience-level">
+                        <option value="">Nivel de experiencia</option>
+                        <option value="junior">Junior</option>
+                        <option value="mid">Mid-Level</option>
+                        <option value="senior">Senior</option>
+                        <option value="lead">Lead</option>
+                    </select>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="jobs-cards">
+            <article>
+                <div>
+                    <h3>Desarrollo de Aplicaciones Móviles</h3>
+                    <small>Mobile Apps Ltd. | Guadalajara</small>
+                    <p>Buscamos desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.</p>
+                </div>
+                <button>Aplicar</button>
+            </article>
+
+            <article>
+                <div>
+                    <h3>Frontend Developer</h3>
+                    <small>Nova Labs | Ciudad de México</small>
+                    <p>Estamos buscando un desarrollador frontend con experiencia en React, TypeScript y diseño responsivo. Idealmente tendrás experiencia creando interfaces accesibles y de alto rendimiento.</p>
+                </div>
+                <button>Aplicar</button>
+            </article>
+
+            <article>
+                <div>
+                    <h3>Backend Engineer</h3>
+                    <small>DataFlow Co. | Remoto</small>
+                    <p>Buscamos un ingeniero backend para construir APIs escalables con Node.js, PostgreSQL y microservicios. La persona ideal debe tener experiencia con pruebas automatizadas y despliegues continuos.</p>
+                </div>
+                <button>Aplicar</button>
+            </article>
+
+            <article>
+                <div>
+                    <h3>QA Automation Specialist</h3>
+                    <small>BrightPath | Monterrey</small>
+                    <p>Necesitamos un especialista en automatización de pruebas con experiencia en Playwright, Cypress y metodologías ágiles. Será responsable de mejorar la calidad y reducir tiempos de entrega.</p>
+                </div>
+                <button>Aplicar</button>
+            </article>
+
+            <article>
+                <div>
+                    <h3>UX/UI Designer</h3>
+                    <small>Pixel Forge | Barcelona</small>
+                    <p>Buscamos un diseñador UX/UI con visión estratégica para crear experiencias intuitivas y visualmente sólidas. Debes dominar Figma, sistemas de diseño y diseño centrado en el usuario.</p>
+                </div>
+                <button>Aplicar</button>
+            </article>
+
+            <article>
+                <div>
+                    <h3>DevOps Engineer</h3>
+                    <small>CloudFrame | Remoto</small>
+                    <p>Estamos buscando un perfil DevOps con experiencia en Docker, Kubernetes, CI/CD y monitorización. La persona ideal optimizará despliegues y garantizará alta disponibilidad en producción.</p>
+                </div>
+                <button>Aplicar</button>
+            </article>
+
+            <nav class="pagination">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M15 6l-6 6l6 6" />
+                    </svg>
+                </a>
+                <a class="is-active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 6l6 6l-6 6" />
+                    </svg>
+                </a>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy; 2025 VegJobs. Todos los derechos reservados.</small>
+    </footer>
+</body>
+</html>
