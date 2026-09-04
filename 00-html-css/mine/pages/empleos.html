@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <meta>
-    <title>VegJobs - Inicio</title>
+    <title>VegJobs - Empleos</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Encuentra las mejores ofertas de trabajo para desarrolladores en DevJobs.">
     
     <link rel="stylesheet" href="../style.css">
+
+    <script type="module" src="../script.js"></script>
+
 </head>
 <body>
     <header>
@@ -48,7 +51,7 @@
                 </div>
 
                 <div class="search-filters">
-                    <select name="technology" id="technology">
+                    <select name="technology" id="filter-technology">
                         <option value="">Tecnología</option>
                         <option value="javascript">JavaScript</option>
                         <option value="python">Python</option>
@@ -78,59 +81,64 @@
         </section>
 
         <section class="jobs-cards">
-            <article>
-                <div>
-                    <h3>Desarrollo de Aplicaciones Móviles</h3>
-                    <small>Mobile Apps Ltd. | Guadalajara</small>
-                    <p>Buscamos desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.</p>
-                </div>
-                <button>Aplicar</button>
-            </article>
 
-            <article>
-                <div>
-                    <h3>Frontend Developer</h3>
-                    <small>Nova Labs | Ciudad de México</small>
-                    <p>Estamos buscando un desarrollador frontend con experiencia en React, TypeScript y diseño responsivo. Idealmente tendrás experiencia creando interfaces accesibles y de alto rendimiento.</p>
-                </div>
-                <button>Aplicar</button>
-            </article>
+            <div class="jobs-listing">
+                <h2>Resultados de búsqueda</h2>
+                <article>
+                <a href="./offers/ingeniero-software-senior.html">
+                    <div>
+                        <h3>Igeniero de Software Senior</h3>
+                        <small>Tech Solutions Inc. | Remoto</small>
+                        <p>Buscamos Ingeniero de Software Senior experimentado con experiencia en metodologías ágiles, git, JavaScript, React, Angular Vue.js... Que tenga almenos 5 años de experiencia.</p>
+                    </div>
+                </a>
+                    <button class="button-apply-job">Aplicar</button>
+                </article>
+                <article>
+                    <div>
+                        <h3>Frontend Developer</h3>
+                        <small>Nova Labs | Ciudad de México</small>
+                        <p>Estamos buscando un desarrollador frontend con experiencia en React, TypeScript y diseño responsivo. Idealmente tendrás experiencia creando interfaces accesibles y de alto rendimiento.</p>
+                    </div>
+                    <button class="button-apply-job">Aplicar</button>
+                </article>
 
-            <article>
-                <div>
-                    <h3>Backend Engineer</h3>
-                    <small>DataFlow Co. | Remoto</small>
-                    <p>Buscamos un ingeniero backend para construir APIs escalables con Node.js, PostgreSQL y microservicios. La persona ideal debe tener experiencia con pruebas automatizadas y despliegues continuos.</p>
-                </div>
-                <button>Aplicar</button>
-            </article>
+                <article>
+                    <div>
+                        <h3>Backend Engineer</h3>
+                        <small>DataFlow Co. | Remoto</small>
+                        <p>Buscamos un ingeniero backend para construir APIs escalables con Node.js, PostgreSQL y microservicios. La persona ideal debe tener experiencia con pruebas automatizadas y despliegues continuos.</p>
+                    </div>
+                    <button class="button-apply-job">Aplicar</button>
+                </article>
 
-            <article>
-                <div>
-                    <h3>QA Automation Specialist</h3>
-                    <small>BrightPath | Monterrey</small>
-                    <p>Necesitamos un especialista en automatización de pruebas con experiencia en Playwright, Cypress y metodologías ágiles. Será responsable de mejorar la calidad y reducir tiempos de entrega.</p>
-                </div>
-                <button>Aplicar</button>
-            </article>
+                <article>
+                    <div>
+                        <h3>QA Automation Specialist</h3>
+                        <small>BrightPath | Monterrey</small>
+                        <p>Necesitamos un especialista en automatización de pruebas con experiencia en Playwright, Cypress y metodologías ágiles. Será responsable de mejorar la calidad y reducir tiempos de entrega.</p>
+                    </div>
+                    <button class="button-apply-job">Aplicar</button>
+                </article>
 
-            <article>
-                <div>
-                    <h3>UX/UI Designer</h3>
-                    <small>Pixel Forge | Barcelona</small>
-                    <p>Buscamos un diseñador UX/UI con visión estratégica para crear experiencias intuitivas y visualmente sólidas. Debes dominar Figma, sistemas de diseño y diseño centrado en el usuario.</p>
-                </div>
-                <button>Aplicar</button>
-            </article>
+                <article>
+                    <div>
+                        <h3>UX/UI Designer</h3>
+                        <small>Pixel Forge | Barcelona</small>
+                        <p>Buscamos un diseñador UX/UI con visión estratégica para crear experiencias intuitivas y visualmente sólidas. Debes dominar Figma, sistemas de diseño y diseño centrado en el usuario.</p>
+                    </div>
+                    <button class="button-apply-job">Aplicar</button>
+                </article>
 
-            <article>
-                <div>
-                    <h3>DevOps Engineer</h3>
-                    <small>CloudFrame | Remoto</small>
-                    <p>Estamos buscando un perfil DevOps con experiencia en Docker, Kubernetes, CI/CD y monitorización. La persona ideal optimizará despliegues y garantizará alta disponibilidad en producción.</p>
-                </div>
-                <button>Aplicar</button>
-            </article>
+                <article>
+                    <div>
+                        <h3>DevOps Engineer</h3>
+                        <small>CloudFrame | Remoto</small>
+                        <p>Estamos buscando un perfil DevOps con experiencia en Docker, Kubernetes, CI/CD y monitorización. La persona ideal optimizará despliegues y garantizará alta disponibilidad en producción.</p>
+                    </div>
+                    <button class="button-apply-job">Aplicar</button>
+                </article>
+            </div>
 
             <nav class="pagination">
                 <a href="#">
